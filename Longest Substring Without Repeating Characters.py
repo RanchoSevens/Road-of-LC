@@ -26,7 +26,7 @@ class Solution:
 //when i submit the operations tell me that time limit exceeded
 //then i see the solutions other people write
 //one is this:create a list that claims the longest substring when start from this position
-//then fidn the maximum length of the list
+//then find the maximum length of the list
 
 class Solution:
     def lengthOfLongestSubstring(self, s):
