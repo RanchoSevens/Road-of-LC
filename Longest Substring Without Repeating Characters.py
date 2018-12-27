@@ -67,9 +67,9 @@ class Solution:
         d={}
         num=len(s)
         for i in range(num):
-            if s[i] in d and d[s[i]]>start:
-                start=d[s[i]]
-                d[s[i]]=i
+            if s[i] in d and d[s[i]]>start://d[s[i]]>start is to calculate
+                start=d[s[i]]              //when like in 'zxxtmkuz' the 'z' is in d{}
+                d[s[i]]=i                  //but still have to calculate the last 'z' as longest string
             else:
                 d[s[i]]=i
                 if i-start>maxn:
