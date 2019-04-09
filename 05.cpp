@@ -1,4 +1,5 @@
-// problem--Longest Palindromic Substring    
+// problem--Longest Palindromic Substring   
+
 class Solution {
 public:
     string longestPalindrome(string s) {
