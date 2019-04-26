@@ -52,26 +52,28 @@ public:
 int main(){
     string s;
     int numRows;
-    cin>>s>>numRows;
-    queue<int> qe[numRows];
-    int now=-1;
-    int inc=1;
-    for(int i=0;i<s.size();i++){
-         now+=inc;
-         if(now<0){
-             inc=1;
-             now+=2;
-         }else if(now>=numRows){
-             inc=-1;
-             now-=2;
-         }
-         qe[i].push(s[i]);
-    }
-    for(int i=0;i<numRows;i++){
+    freopen("data.txt","r",stdin);
+    while(cin>>s>>numRows!=EOF){
+        queue<int> qe[numRows];
+        int now=-1;
+        int inc=1;
+        for(int i=0;i<s.size();i++){
+            now+=inc;
+            if(now<0){
+                inc=1;
+                now+=2;
+            }else if(now>=numRows){
+                inc=-1;
+                now-=2;
+            }
+            qe[i].push(s[i]);
+        }
+        for(int i=0;i<numRows;i++){
 //        printf("%d\n",qe[i].size());
-        while(!qe[i].empty()){
-            printf("%c",qe[i].front());
-            qe[i].pop();
+            while(!qe[i].empty()){
+                printf("%c",qe[i].front());
+                qe[i].pop();
+            }
         }
     }
     return 0;
