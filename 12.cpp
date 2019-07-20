@@ -24,4 +24,5 @@ public:
 /*
 1.用数组逐单位取余
 2.char与string转换时容易出错，只用string或者只用char
+3.string不要用+=
 */
