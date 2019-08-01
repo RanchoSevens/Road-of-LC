@@ -1,2 +1,3 @@
 # Road-of-LC
-my trip to leetcode
+My trip to leetcode.
+Fighting！ Fighting！ Fighting！
