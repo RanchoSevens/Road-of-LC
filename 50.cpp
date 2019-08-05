@@ -10,8 +10,11 @@ public:
         }
         if(fabs(fabs(x)-1)<eps)  return num%2==0?fabs(x):x; 
         while(num>0){
-            res=res*x;
-            num--;
+            if(num&1){
+                res=res*x;
+            }
+            num>>=1;
+            x*=x;
             if(fabs(res)<eps) break;
         }
         return res;
@@ -19,4 +22,5 @@ public:
 };
 /*
 1.处理好特殊情况即可
+2.可以用迭代法，递归实现快速幂亦可
 */
