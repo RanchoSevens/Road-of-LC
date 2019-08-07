@@ -9,16 +9,16 @@ public:
             if(target==nums[high]) return high;
             if(target==nums[mid]) return mid;
             if(nums[mid]>nums[low]){//pivot在mid右
-                if(target>nums[mid]) low=mid+1;
-                else{
-                    if(target<nums[low]) low=mid+1;
-                    else high=mid-1;
+                if(target>nums[low]&&target<nums[mid]){
+                    high=mid-1;
+                }else{
+                    low=mid+1;
                 }
             }else{//pivot在mid左
-                if(target<nums[mid]) high=mid-1;
-                else{
-                    if(target<nums[low]) low=mid+1;
-                    else high=mid-1;
+                if(target>nums[mid]&&target<nums[high]){
+                    low=mid+1;
+                }else{
+                    high=mid-1;
                 }
             }
         }
