@@ -11,7 +11,7 @@ public:
             else if(nums[mid]<nums[left]) right=mid;
             else left++;
         }
-        return min(nums[left],nums[right]);
+        return nums[left];
     }
 };
 
