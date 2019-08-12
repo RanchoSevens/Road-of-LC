@@ -43,5 +43,5 @@ public{
      }
 }
 /*
-1.使用stringstream读入读出
+1.使用stringstream分别读入操作数与操作符，并自动忽略空格
 */
