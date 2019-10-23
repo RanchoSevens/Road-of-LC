@@ -22,3 +22,19 @@ public:
         return count;
     }
 };
+
+
+class Solution2 {
+public:
+    int findPairs(vector<int>& nums, int k) {
+        if(k<0) return 0;
+        unordered_map<int,int> m;
+        int cnt=0;
+        for(int num:nums) m[num]++;
+        for(auto p:m){
+            if((!k&&p.second>1)||(k&&m.count(p.first+k)>0)) cnt++;
+            
+        }
+        return cnt;
+    }
+};
