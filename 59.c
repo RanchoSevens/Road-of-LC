@@ -43,3 +43,17 @@ int** generateMatrix(int n, int* returnSize, int** returnColumnSizes){
 /*
 1.returnColumnSizes需每行设置
 */
+
+
+// Another Mountain's stone
+    ||  =>  |9|  =>  |8|      |6 7|      |4 5|      |1 2 3|
+                     |9|  =>  |9 8|  =>  |9 6|  =>  |8 9 4|
+                                         |8 7|      |7 6 5|
+The code:
+
+def generateMatrix(self, n):
+    A, lo = [], n*n+1
+    while lo > 1:
+        lo, hi = lo - len(A), lo
+        A = [range(lo, hi)] + zip(*A[::-1])
+    return A
