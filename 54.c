@@ -18,7 +18,7 @@ int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSi
     int nSteps[2];
     nSteps[0]=*matrixColSize;
     nSteps[1]=matrixSize-1;
-    // printf("%d$$$%d\n",nSteps[0],nSteps[1]);
+
     int iDir=0;
     int im=0;
     int in=-1;
@@ -27,9 +27,6 @@ int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSi
     
     while(nowStep){
         for(int i=0;i<nowStep;++i){
-            // if(){
-                
-            // }
             im+=dir[iDir][0];
             in+=dir[iDir][1];
             printf("im = %d $$$ in = %d\n",im,in);
