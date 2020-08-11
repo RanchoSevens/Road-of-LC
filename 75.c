@@ -28,4 +28,5 @@ void quickSort(int start,int end,int* nums){
 1.熟悉快排过程
 2.递归一定要有一个返回(边界条件)
 3.快排是基于分治法，分而治之
+参考：https://blog.csdn.net/morewindows/article/details/6684558
 */
