@@ -27,3 +27,15 @@ int removeDuplicates(int* nums, int numsSize){
     }
     return i+1;
 }
+
+/*
+1.他山之石，精妙
+*/
+int removeDuplicates(int* nums, int numsSize){
+    int i = 0;
+    for (int now = 0;now < numsSize;++now){
+        if (i < 2 || nums[now] > nums[i-2])
+            nums[i++] = nums[now];
+    }
+    return i;
+}
