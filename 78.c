@@ -1,5 +1,6 @@
 // nums[c], arr_t[ind]
 // n代表当前要形成的数组长度(由1开始，直到numsSize)
+// 状态转移方程、递归返回条件
 
 int dfs(int *nums, int c, int numsSize, int arr_t[], \
         int ind, int n, int **arr, int *returnSize, int **returnColumnSizes) 
