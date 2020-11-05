@@ -3,6 +3,7 @@
 2.数量超过2，则i不增;不超过2，i增加，并用n_num更新nums[i]
 3.n_num更新，则n_len、nums[i]同时更新
 */
+(80. Remove Duplicates from Sorted Array II)[https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/]
 
 int removeDuplicates(int* nums, int numsSize){
     if(numsSize == 0) return 0;
