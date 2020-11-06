@@ -31,12 +31,15 @@ int removeDuplicates(int* nums, int numsSize){
 }
 
 /*
-1.他山之石，精妙
+1.他山之石
+2.不多于2个重复数字，则从下标为2开始遍历，i表示待更新的下标，now则为当前遍历到的下标
+3.若 nums[now] > nums[i-2]，则说明now下标所代表的数应该被正确放置于i位置，无论i与now是否相等
 */
 int removeDuplicates(int* nums, int numsSize){
-    int i = 0;
-    for (int now = 0;now < numsSize;++now){
-        if (i < 2 || nums[now] > nums[i-2])
+    if(numsSize < 3) return numsSize;
+    int i = 2;
+    for (int now = i;now < numsSize;++now){
+        if ( nums[now] > nums[i-2])
             nums[i++] = nums[now];
     }
     return i;
