@@ -2,8 +2,6 @@
 ##### My trip to leetcode.
 ##### Fighting！ Fighting！ Fighting！
 
-
-
 | id | name | description | website | solution |
 | --- | --- | --- | --- | --- |
 |  26 |  remove-duplicates-from-sorted-array |  去除重复数字 | [leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  |  [26.c](https://github.com/RanchoSevens/Road-of-LC/blob/master/26.c) [26.cpp](https://github.com/RanchoSevens/Road-of-LC/blob/master/26.cpp) |
